@@ -1,0 +1,273 @@
+CRITICAL - 2024-06-18 21:01:58 --> Undefined variable $nombre
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:04:00 --> Undefined variable $nombre
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:05:00 --> Undefined variable $nombre
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:05:03 --> Undefined variable $nombre
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:05:04 --> Undefined variable $nombre
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:05:05 --> Undefined variable $nombre
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:05:05 --> Undefined variable $nombre
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:07:19 --> Undefined variable $name
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:07:24 --> Undefined variable $name
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:07:25 --> Undefined variable $name
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:07:27 --> Undefined variable $name
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:07:28 --> Undefined variable $name
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:10:59 --> Undefined variable $nombre
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:11:00 --> Undefined variable $nombre
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:11:01 --> Undefined variable $nombre
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:12:12 --> Undefined variable $validation
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:12:13 --> Undefined variable $validation
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:12:14 --> Undefined variable $validation
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:13:12 --> Undefined variable $validation
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:13:13 --> Undefined variable $validation
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\contacto.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('contacto', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(28): view('contacto')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-06-18 21:19:25 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+CRITICAL - 2024-06-18 21:19:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Login_controller.php(26): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Login_controller->auth()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-06-18 21:19:42 --> Error connecting to the database: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+CRITICAL - 2024-06-18 21:19:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Login_controller.php(26): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Login_controller->auth()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-18 21:40:36 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\FormController.php(30): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\FormController->formValidation()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-18 21:41:51 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\FormController.php(30): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\FormController->formValidation()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-18 21:44:38 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\FormController.php(30): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\FormController->formValidation()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormController))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}

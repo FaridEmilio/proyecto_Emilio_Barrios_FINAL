@@ -1,0 +1,12 @@
+Proyecto 2da parte Barrios Emilio Farid – NUTRIMIX
+
+
+USUARIO ADMINISTRADOR: 
+email: emiliofaridbarrios@gmail.com
+pass: 123456789
+
+USUARIOS CLIENTE: 
+
+email: weplayctes@gmail.com
+pass: 123456789
+

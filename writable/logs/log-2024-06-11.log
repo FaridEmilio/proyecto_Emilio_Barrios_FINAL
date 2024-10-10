@@ -1,0 +1,153 @@
+CRITICAL - 2024-06-11 19:08:28 --> Invalid file: templates/carousel.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/carou...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('templates/carou...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(11): view('templates/carou...')
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-11 19:13:23 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Login_controller.php(13): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Login_controller->index()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-11 19:29:08 --> Undefined variable $head
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\about.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 1)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('about', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(20): view('about')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->quienes_Somos()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-11 19:29:14 --> Undefined variable $head
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\about.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 1)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('about', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(20): view('about')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->quienes_Somos()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-11 19:29:37 --> Undefined variable $head
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\about.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 1)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('about', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Home.php(20): view('about')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Home->quienes_Somos()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-11 19:51:48 --> Invalid file: templates/header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/heade...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Login_controller.php(13): view('templates/heade...')
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Login_controller->index()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-11 19:51:50 --> Invalid file: templates/header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/heade...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Login_controller.php(13): view('templates/heade...')
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Login_controller->index()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-11 19:52:09 --> Invalid file: templates/header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/heade...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Login_controller.php(13): view('templates/heade...')
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Login_controller->index()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-11 19:59:18 --> Undefined variable $head
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\login\login.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('login/login', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Login_controller.php(16): view('login/login')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Login_controller->index()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-11 19:59:24 --> Undefined variable $head
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\login\login.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('login/login', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Login_controller.php(16): view('login/login')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Login_controller->index()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-11 20:12:35 --> Invalid file: template/head.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/head.p...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('template/head', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Usuario_controller.php(15): view('template/head', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Usuario_controller->create()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2024-06-11 20:17:10 --> Error connecting to the database: Unknown database 'emilio_barrios_db'
+CRITICAL - 2024-06-11 20:17:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'emilio_barrios_db'
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique('maxi@gmail.com....', 'email', Array, NULL)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('email', 'email', 'maxi@gmail.com....', Array, Array)
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Usuario_controller.php(26): CodeIgniter\Controller->validate(Array)
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Usuario_controller->formValidation()
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+#9 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-11 20:25:51 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Panel_controller.php(13): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Panel_controller->index()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-11 20:29:00 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Panel_controller.php(13): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Panel_controller->index()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-11 20:39:59 --> Undefined variable $perfil
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\templates\cabecera.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('templates/cabec...', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Panel_controller.php(14): view('templates/cabec...')
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Panel_controller->index()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel_controller))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

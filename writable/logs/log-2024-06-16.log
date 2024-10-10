@@ -1,0 +1,22 @@
+CRITICAL - 2024-06-16 20:21:01 --> Undefined variable $prod
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\usuarios\ListaCompras_view.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('usuarios/ListaC...', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(33): view('usuarios/ListaC...', Array)
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->ListComprasCabecera()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-16 20:21:30 --> Undefined variable $prod
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\usuarios\ListaCompras_view.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 53)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('usuarios/ListaC...', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(33): view('usuarios/ListaC...', Array)
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->ListComprasCabecera()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}

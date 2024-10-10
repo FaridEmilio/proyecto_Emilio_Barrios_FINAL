@@ -1,0 +1,405 @@
+CRITICAL - 2024-06-13 09:37:55 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Producto_controller.php(85): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Producto_controller->ProductosDisp()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 09:39:34 --> Invalid file: back/carrito/ProductosCart_view.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/carrito/Pr...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('back/carrito/Pr...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Producto_controller.php(87): view('back/carrito/Pr...', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Producto_controller->ProductosDisp()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 09:56:50 --> Invalid file: templates/head.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/head....')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('templates/head', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Producto_controller.php(85): view('templates/head', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Producto_controller->ProductosDisp()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 09:57:55 --> Invalid file: templates/head.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/head....')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('templates/head', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Login_controller.php(13): view('templates/head', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Login_controller->index()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 09:58:48 --> Invalid file: templates/head.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/head....')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('templates/head', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Usuario_controller.php(15): view('templates/head', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Usuario_controller->create()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 09:59:28 --> Invalid file: templates/head.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/head....')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('templates/head', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Usuario_controller.php(15): view('templates/head', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Usuario_controller->create()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 10:00:04 --> Undefined variable $dato
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Usuario_controller.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 15)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Usuario_controller->create()
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-06-13 10:11:48 --> unlink(C:\xampp\htdocs\proyecto_Emilio_Barrios\writable\debugbar/debugbar_1718290463.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1718291495, 20)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-13 10:16:28 --> unlink(C:\xampp\htdocs\proyecto_Emilio_Barrios\writable\debugbar/debugbar_1718290670.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1718291734, 20)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-13 10:16:38 --> unlink(C:\xampp\htdocs\proyecto_Emilio_Barrios\writable\debugbar/debugbar_1718290670.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp\\htdocs...', 74)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Debug\Toolbar.php(487): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1718291753, 20)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-13 10:53:01 --> Undefined variable $productos
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\carrito\ProductosCart_view.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('carrito/Product...', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(88): view('carrito/Product...', Array)
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->productosAgregados()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-13 10:53:57 --> Undefined array key "eliminado"
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\carrito\ProductosCart_view.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('carrito/Product...', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(88): view('carrito/Product...', Array)
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->productosAgregados()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-13 10:56:00 --> Undefined variable $productos
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\carrito\ProductosCart_view.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('carrito/Product...', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(88): view('carrito/Product...', Array)
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->productosAgregados()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-13 10:56:08 --> Undefined variable $productos
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Views\carrito\ProductosCart_view.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 6)
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('carrito/Product...', Array, true)
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(88): view('carrito/Product...', Array)
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->productosAgregados()
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#7 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-06-13 11:09:53 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(167): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->muestra_compra()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 11:13:32 --> Invalid file: carrito/confirmar_compra.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('carrito/confirm...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('carrito/confirm...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(168): view('carrito/confirm...')
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->confirmar_compra()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 11:13:38 --> Invalid file: carrito/confirmar_compra.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('carrito/confirm...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('carrito/confirm...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(168): view('carrito/confirm...')
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->confirmar_compra()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 11:54:40 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Datatable_controller.php(39): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Datatable_controller->editoMisDatos('54')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datatable_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 11:57:00 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Datatable_controller.php(37): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Datatable_controller->editoMisDatos('54')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datatable_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 11:57:43 --> Invalid file: usuario/editoMisDatos_view.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/editoMi...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('usuario/editoMi...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Datatable_controller.php(38): view('usuario/editoMi...', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Datatable_controller->editoMisDatos('54')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datatable_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 11:59:11 --> Invalid file: usuario/editoMisDatos_view.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/editoMi...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('usuario/editoMi...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Datatable_controller.php(38): view('usuario/editoMi...', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Datatable_controller->editoMisDatos('54')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datatable_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 12:06:38 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(58): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->ListComprasCabeceraCliente('54')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 12:08:11 --> Invalid file: usuario/ListaCompras_view.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/ListaCo...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('usuario/ListaCo...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(59): view('usuario/ListaCo...', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->ListComprasCabeceraCliente('54')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 12:09:46 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(76): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->ListCompraDetalle('109')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 12:10:13 --> Invalid file: back/Admin/CompraDetalle_view.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/Admin/Comp...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('back/Admin/Comp...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(77): view('back/Admin/Comp...', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->ListCompraDetalle('109')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 12:12:46 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(268): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->FacturaAdmin('109')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 12:15:05 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(267): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->FacturaAdmin('109')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 12:15:08 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(267): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->FacturaAdmin('109')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 12:15:46 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Carrito_controller.php(267): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Carrito_controller->FacturaAdmin('109')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Carrito_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 12:47:40 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Producto_controller.php(152): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Producto_controller->ProductoDetalle('29')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:11:22 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Contactocontroller.php(25): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Contactocontroller->Datos_consultas()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactocontroller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:14:05 --> Invalid file: usuarios/consultas_view.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/consul...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('usuarios/consul...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Contactocontroller.php(26): view('usuarios/consul...', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Contactocontroller->Datos_consultas()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactocontroller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:15:23 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Contactocontroller.php(35): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Contactocontroller->ConsultaDetalle('8')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactocontroller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:19:30 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Contactocontroller.php(78): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Contactocontroller->Datos_consultasResueltas()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contactocontroller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:24:34 --> Invalid file: usuario/usuarios_view.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/usuario...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('usuario/usuario...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Datatable_controller.php(16): view('usuario/usuario...', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Datatable_controller->index()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datatable_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:29:37 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Usuario_controller.php(173): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Usuario_controller->usuariosEliminados()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:31:20 --> Invalid file: admin/listUS_Eliminados_view.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/listUS_El...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('admin/listUS_El...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Usuario_controller.php(173): view('admin/listUS_El...', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Usuario_controller->usuariosEliminados()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:39:51 --> Invalid file: back/Admin/editarUsuarios_view.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('back/Admin/edit...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('back/Admin/edit...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Datatable_controller.php(27): view('back/Admin/edit...', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Datatable_controller->editar('55')
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Datatable_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:41:49 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Usuario_controller.php(58): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Usuario_controller->nuevoUsuario()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:43:33 --> Invalid file: admin/creoNuevoUsuario_view.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/creoNuevo...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('admin/creoNuevo...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Usuario_controller.php(59): view('admin/creoNuevo...')
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Usuario_controller->nuevoUsuario()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:49:09 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Producto_controller.php(72): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Producto_controller->ListaProductos()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:54:51 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Producto_controller.php(247): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Producto_controller->ListaProductosElim()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 15:58:36 --> Invalid file: header.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Producto_controller.php(16): view('header', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Producto_controller->nuevoProducto()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-13 16:23:38 --> Invalid file: productos/ProductosCart_view.php
+#0 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('productos/Produ...')
+#1 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\Common.php(1089): CodeIgniter\View\View->render('productos/Produ...', Array, true)
+#2 C:\xampp\htdocs\proyecto_Emilio_Barrios\app\Controllers\Producto_controller.php(94): view('productos/Produ...', Array)
+#3 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(832): App\Controllers\Producto_controller->Mantequilla_Mani()
+#4 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto_controller))
+#5 C:\xampp\htdocs\proyecto_Emilio_Barrios\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\proyecto_Emilio_Barrios\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
