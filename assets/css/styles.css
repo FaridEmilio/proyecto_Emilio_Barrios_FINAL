@@ -437,9 +437,20 @@
     right: -1rem;
 }
 
-.content-card-product {
+.card-product {
+    display: flex;
+    flex-direction: column;
+    /* Organiza elementos en columna */
+    justify-content: space-between;
+    /* Espaciado uniforme */
     align-items: center;
-    justify-items: center;
+    /* Centra horizontalmente los elementos */
+    border: 1px solid #ddd;
+    padding: 1rem;
+    height: 100%;
+    /* Garantiza que las tarjetas tengan la misma altura */
+    position: relative;
+    /* Necesario para posicionar elementos al final */
 }
 
 .content-card-product h3 {
@@ -465,19 +476,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
+    /* Espacio entre texto y ícono */
+    font-size: 1.5rem;
+    /* Tamaño del texto */
+    color: var(--primary-color);
+    /* Color del texto */
 }
 
 .add-cart:hover {
     background-color: var(--primary-color);
+    color: #fff;
+    /* Cambiar color del texto al pasar el cursor */
 }
 
 .add-cart i {
     font-size: 1.5rem;
     color: var(--primary-color);
+    transition: color 0.4s ease;
+    /* Transición suave al cambiar el color */
 }
 
 .add-cart:hover i {
     color: #fff;
+    /* Cambiar color del ícono al pasar el cursor */
 }
 
 .content-card-product .price {
@@ -999,4 +1021,9 @@ i {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }

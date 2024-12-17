@@ -7,268 +7,320 @@ use CodeIgniter\Controller;
 
 class Usuario_controller extends Controller
 {
-
     public function __construct()
     {
         helper(['form', 'url']);
     }
 
+    /**
+     * Función para centralizar reglas de validación
+     */
+    private function getValidationRules($isEdit = false)
+    {
+        $rules = [
+            'nombre'   => 'required|alpha_space|min_length[3]|max_length[20]',
+            'apellido' => 'required|alpha_space|min_length[3]|max_length[20]',
+            'email'    => 'required|min_length[4]|max_length[50]|valid_email',
+            'usuario'  => 'required|min_length[3]',
+            'telefono' => 'required|numeric|min_length[10]|max_length[10]',
+            'direccion' => 'required|max_length[50]',
+            'pass'     => !$isEdit ? 'required|min_length[8]|max_length[16]' : 'permit_empty|min_length[8]|max_length[16]',
+        ];
+
+        // Solo se agrega la validación de email único en creación, no en edición
+        if (!$isEdit) {
+            $rules['email'] .= '|is_unique[usuarios.email]';
+        }
+
+        return $rules;
+    }
+
+    public function isEmailValido($email)
+    {
+        // Usar filtro de PHP para validar email
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return false; // Retorna falso si no es un email válido
+        }
+
+        // Validar que no contenga caracteres prohibidos (seguridad extra)
+        $regex = '/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/';
+        if (!preg_match($regex, $email)) {
+            return false; // Retorna falso si no cumple con el formato
+        }
+
+        return true; // Email válido
+    }
+
+    /**
+     * Renderiza las vistas con cabecera y footer
+     */
+    private function render($view, $data = [])
+    {
+        return view('templates/cabecera', $data)
+            . view($view, $data)
+            . view('templates/footer', $data);
+    }
+
+    /**
+     * Página de registro
+     */
     public function create()
     {
         $data['titulo'] = 'Registro';
-        echo view('templates/cabecera', $data);
-        echo view('register/registrarse');
-        echo view('templates/footer');
+        return $this->render('register/registrarse', $data);
     }
 
+    /**
+     * Validación y registro de usuario
+     */
     public function formValidation()
     {
-        //helper(['form', 'url']);
+        $validationRules = $this->getValidationRules();
 
-        $input = $this->validate([
-            'nombre'   => 'required|min_length[3]',
-            'apellido' => 'required|min_length[3]|max_length[25]',
-            'email'    => 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuarios.email]',
-            'usuario'  => 'required|min_length[3]',
-            'telefono'  => 'required|min_length[10]|max_length[10]',
-            'direccion'  => 'required|max_length[100]',
-            'pass'     => 'required|min_length[3]|max_length[10]'
-        ]);
-        $formModel = new Usuarios_model();
-
-        if (!$input) {
+        if (!$this->validate($validationRules)) {
             $data['titulo'] = 'Registro';
-            echo view('templates/cabecera', $data);
-            echo view('register/registrarse', ['validation' => $this->validator]);
-            echo view('templates/footer');
-        } else {
-            $formModel->save([
-                'nombre' => $this->request->getVar('nombre'),
-                'apellido' => $this->request->getVar('apellido'),
-                'usuario' => $this->request->getVar('usuario'),
-                'telefono' => $this->request->getVar('telefono'),
-                'direccion' => $this->request->getVar('direccion'),
-                'email'  => $this->request->getVar('email'),
-                'pass' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT)
-            ]);
-            session()->setFlashdata('msg', 'Registro completado con éxito');
-            return $this->response->redirect(site_url(''));
+            return $this->render('register/registrarse', ['validation' => $this->validator]);
         }
-    }
 
+        // Validar email con la función personalizada
+        $email = $this->request->getVar('email');
+        if (!$this->isEmailValido($email)) {
+            $data['titulo'] = 'Registro';
+            session()->setFlashdata('fail', 'El email ingresado no es válido.');
+            return $this->render('register/registrarse');
+        }
 
-    public function nuevoUsuario()
-    {
-        $data['titulo'] = 'Crear Nuevo Usuario';
-        echo view('templates/cabecera', $data);
-        echo view('admin/creoNuevoUsuario_view');
-        echo view('templates/footer');
-    }
+        if ($this->request->getVar('perfil_id')) {
+            $validationRules['perfil_id'] = 'required|in_list[1,2]';
+        }
 
-    public function formValidationAdmin()
-    {
-        //helper(['form', 'url']);
+        $usuarioModel = new Usuarios_model();
 
-        $input = $this->validate([
-            'nombre'   => 'required|min_length[3]',
-            'apellido' => 'required|min_length[3]|max_length[25]',
-            'email'    => 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuarios.email]',
-            'usuario'  => 'required|min_length[3]',
-            'telefono'  => 'required|min_length[10]|max_length[10]',
-            'direccion'  => 'required|max_length[100]',
-            'pass'     => 'required|min_length[3]|max_length[10]',
-            'perfil_id' => 'required|max_length[1]'
+        $usuarioModel->save([
+            'nombre'    => esc($this->request->getVar('nombre')),
+            'apellido'  => esc($this->request->getVar('apellido')),
+            'usuario'   => esc($this->request->getVar('usuario')),
+            'telefono'  => esc($this->request->getVar('telefono')),
+            'direccion' => esc($this->request->getVar('direccion')),
+            'email'     => esc($this->request->getVar('email')),
+            'pass'      => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
+            'perfil_id' => $this->request->getVar('perfil_id') ?? 2, // Si no se define, por defecto es cliente (2)
 
         ]);
-        $formModel = new Usuarios_model();
 
-        if (!$input) {
-            $data['titulo'] = 'Registro';
-            echo view('header', $data);
-            echo view('cabecera');
-            echo view('back/Admin/creoNuevoUsuario_view', ['validation' => $this->validator]);
-            echo view('footer');
-        } else {
-            $formModel->save([
-                'nombre' => $this->request->getVar('nombre'),
-                'apellido' => $this->request->getVar('apellido'),
-                'usuario' => $this->request->getVar('usuario'),
-                'telefono' => $this->request->getVar('telefono'),
-                'direccion' => $this->request->getVar('direccion'),
-                'email'  => $this->request->getVar('email'),
-                'pass' => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
-                'perfil_id'  => $this->request->getVar('perfil_id'),
-
-            ]);
-            session()->setFlashdata('msg', 'Usuario creado con éxito');
-            return redirect()->to(base_url('usuarios-list'));
-        }
+        session()->setFlashdata('success', 'Registro completado con éxito');
+        return redirect()->to(base_url('/login'));
     }
 
+    /**
+     * Validación y edición de usuario
+     */
     public function formValidationEdit()
     {
+        $id = $this->request->getVar('id');
+        if (!$id) {
+            session()->setFlashdata('fail', 'ID de usuario no válido');
+            return redirect()->back();
+        }
 
-        //print_r($_POST);exit;
+        $usuarioModel = new Usuarios_model();
+        $existingUser = $usuarioModel->find($id);
 
-        $input = $this->validate([
-            'nombre'   => 'required|min_length[3]|max_length[25]',
-            'apellido' => 'required|min_length[3]|max_length[25]',
-            'email'    => 'required|min_length[4]|max_length[100]|valid_email',
-            'usuario'  => 'required|min_length[3]',
-            'telefono'  => 'required|min_length[10]|max_length[10]',
-            'direccion'  => 'required|max_length[100]',
-            'perfil_id' => 'max_length[1]',
-            'baja'  => 'required|max_length[2]'
+        if (!$existingUser) {
+            session()->setFlashdata('fail', 'Usuario no encontrado');
+            return redirect()->back();
+        }
+
+        $validationRules = $this->getValidationRules(true);
+        $validationRules['email'] = "required|valid_email|is_unique[usuarios.email,id,{$id}]";
+
+
+        if (!$this->validate($validationRules)) {
+            $data['titulo'] = 'Editar Usuario';
+            return $this->render('usuarios/editarUsuarios_view', ['validation' => $this->validator, 'data' => $existingUser]);
+        }
+
+        $datos = [
+            'nombre'    => esc($this->request->getVar('nombre')),
+            'apellido'  => esc($this->request->getVar('apellido')),
+            'usuario'   => esc($this->request->getVar('usuario')),
+            'telefono'  => esc($this->request->getVar('telefono')),
+            'direccion' => esc($this->request->getVar('direccion')),
+            'email'     => esc($this->request->getVar('email')),
+            'perfil_id'     => esc($this->request->getVar('perfil_id')),
+        ];
+
+        $newPass = $this->request->getVar('pass');
+        if (!empty($newPass)) {
+            $datos['pass'] = password_hash($newPass, PASSWORD_DEFAULT);
+        }
+
+        $usuarioModel->update($id, $datos);
+
+        session()->setFlashdata('success', 'Usuario editado con éxito');
+        return redirect()->to(base_url('usuarios-list'));
+    }
+
+    /**
+     * Página para crear un nuevo usuario (solo para administradores).
+     */
+    public function nuevoUsuario()
+    {
+        $data['titulo'] = 'Nuevo Usuario';
+        return $this->render('admin/creoNuevoUsuario_view', $data);
+    }
+
+    /**
+     * Validación y creación de usuario por administrador.
+     */
+    public function formValidationAdmin()
+    {
+        // Reglas de validación extendidas para incluir el campo `perfil_id`
+        $validationRules = $this->getValidationRules();
+        $validationRules['perfil_id'] = 'required|in_list[1,2]'; // Solo Admin o Cliente
+
+        // Validar los datos recibidos
+        if (!$this->validate($validationRules)) {
+            $data['titulo'] = 'Nuevo Usuario';
+            return $this->render('admin/creoNuevoUsuario_view', ['validation' => $this->validator]);
+        }
+
+        // Validar email con la función personalizada (extra seguridad)
+        $email = $this->request->getVar('email');
+        if (!$this->isEmailValido($email)) {
+            session()->setFlashdata('fail', 'El email ingresado no es válido.');
+            return $this->render('admin/creoNuevoUsuario_view');
+        }
+
+        // Guardar los datos del nuevo usuario
+        $usuarioModel = new Usuarios_model();
+        $usuarioModel->save([
+            'nombre'    => esc($this->request->getVar('nombre')),
+            'apellido'  => esc($this->request->getVar('apellido')),
+            'usuario'   => esc($this->request->getVar('usuario')),
+            'telefono'  => esc($this->request->getVar('telefono')),
+            'direccion' => esc($this->request->getVar('direccion')),
+            'email'     => esc($this->request->getVar('email')),
+            'pass'      => password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT),
+            'perfil_id' => $this->request->getVar('perfil_id'), // Admin o Cliente
         ]);
-        $Model = new Usuarios_model();
-        $id = $_POST['id'];
-        if (!$input) {
-            $data = $Model->getUsuario($id);
-            $dato['titulo'] = 'Editar Usuario';
-            echo view('templates/cabecera', $dato);
-            echo view('usuarios/editarUsuarios_view', compact('data'));
-            echo view('templates/footer');
-        } else {
-            //print_r($_POST);exit;
-            $data = $Model->getUsuario($id);
-            $pass = $data['pass'];
-            $hash = $_POST['pass'];
-            if ($hash == NULL) {
-                $datos = [
-                    'nombre' => $_POST['nombre'],
-                    'apellido' => $_POST['apellido'],
-                    'email' => $_POST['email'],
-                    'usuario'  => $_POST['usuario'],
-                    'telefono'  => $_POST['telefono'],
-                    'direccion'  => $_POST['direccion'],
-                    'perfil_id'  => $_POST['perfil_id'],
-                    'baja'  => $_POST['baja'],
 
-                ];
-            } else {
-                $datos = [
-                    'id' => $_POST['id'],
-                    'nombre' => $_POST['nombre'],
-                    'apellido' => $_POST['apellido'],
-                    'email' => $_POST['email'],
-                    'usuario'  => $_POST['usuario'],
-                    'telefono'  => $_POST['telefono'],
-                    'direccion'  => $_POST['direccion'],
-                    'pass' => password_hash($_POST['pass'], PASSWORD_DEFAULT),
+        // Mensaje de éxito y redirección
+        session()->setFlashdata('success', 'Usuario creado con éxito.');
+        return redirect()->to(base_url('usuarios-list'));
+    }
 
-                ];
-            }
+    /**
+     * Eliminar usuario lógicamente (marcar como baja)
+     */
+    public function delete($id)
+    {
+        if (!$id) {
+            session()->setFlashdata('fail', 'ID de usuario no válido');
+            return redirect()->back();
+        }
 
-            // Actualizar en la base de datos
-            $Model->update($id, $datos);
+        $usuarioModel = new Usuarios_model();
 
-            session()->setFlashdata('msg', 'Usuario editado con éxito');
-
+        $usuario = $usuarioModel->find($id);
+        if (!$usuario) {
+            session()->setFlashdata('fail', 'Usuario no encontrado');
             return redirect()->to(base_url('usuarios-list'));
         }
+
+        $usuarioModel->update($id, ['baja' => 'SI']);
+        session()->setFlashdata('success', 'Usuario eliminado con éxito');
+        return redirect()->to(base_url('usuarios-list'));
     }
+
+    /**
+     * Habilitar usuario (marcar como no baja)
+     */
+    public function habilitar($id)
+    {
+        if (!$id) {
+            session()->setFlashdata('fail', 'ID de usuario no válido');
+            return redirect()->back();
+        }
+
+        $usuarioModel = new Usuarios_model();
+
+        $usuario = $usuarioModel->find($id);
+        if (!$usuario) {
+            session()->setFlashdata('fail', 'Usuario no encontrado');
+            return redirect()->to(base_url('eliminados'));
+        }
+
+        $usuarioModel->update($id, ['baja' => 'NO']);
+        session()->setFlashdata('success', 'Usuario habilitado con éxito');
+        return redirect()->to(base_url('eliminados'));
+    }
+
+    /**
+     * Usuarios eliminados
+     */
     public function usuariosEliminados()
     {
-        $userModel = new Usuarios_model();
-        $baja = 'SI';
-        $data['usuarios'] = $userModel->getUsBaja($baja);
+        $usuarioModel = new Usuarios_model();
+        $data['usuarios'] = $usuarioModel->where('baja', 'SI')->findAll();
         $dato['titulo'] = 'Usuarios Eliminados';
-        echo view('templates/cabecera', $dato);
-        echo view('usuarios/listUS_Eliminados_view', $data);
-        echo view('templates/footer');
+        return $this->render('usuarios/listUS_Eliminados_view', $data);
     }
 
     public function usuarioEdit()
     {
+        $id = $this->request->getVar('id');
 
-        //print_r($_POST);exit;
-
-        $input = $this->validate([
-            'nombre'   => 'required|min_length[3]',
-            'apellido' => 'required|min_length[3]|max_length[25]',
-            'email'    => 'required|min_length[4]|max_length[100]|valid_email',
-            'usuario'  => 'required|min_length[3]',
-            'telefono'  => 'required|min_length[10]|max_length[10]',
-            'direccion'  => 'required|max_length[100]',
-
-        ]);
-        $Model = new Usuarios_model();
-        $id = $_POST['id'];
-        if (!$input) {
-            $data = $Model->getUsuario($id);
-            $dato['titulo'] = 'Editar Usuario';
-            echo view('templates/cabecera', $dato);
-            echo view('usuarios/editoMisDatos_view', compact('data'));
-            echo view('templates/footer');
-        } else {
-            $data = $Model->getUsuario($id);
-            $pass = $data['pass'];
-            $hash = $_POST['pass'];
-            if ($hash == NULL) {
-                $datos = [
-                    'id' => $_POST['id'],
-                    'nombre' => $_POST['nombre'],
-                    'apellido' => $_POST['apellido'],
-                    'email' => $_POST['email'],
-                    'usuario'  => $_POST['usuario'],
-                    'telefono'  => $_POST['telefono'],
-                    'direccion'  => $_POST['direccion'],
-
-                ];
-            } else {
-                $datos = [
-                    'id' => $_POST['id'],
-                    'nombre' => $_POST['nombre'],
-                    'apellido' => $_POST['apellido'],
-                    'email' => $_POST['email'],
-                    'usuario'  => $_POST['usuario'],
-                    'telefono'  => $_POST['telefono'],
-                    'direccion'  => $_POST['direccion'],
-                    'pass' => password_hash($_POST['pass'], PASSWORD_DEFAULT),
-
-                ];
-            }
-
-
-            $Model->update($id, $datos);
-
-            session()->setFlashdata('msg', 'Datos editados con éxito');
-
-            return redirect()->to(base_url('/'));
+        // Verificar si el ID es válido
+        if (!$id) {
+            session()->setFlashdata('fail', 'ID de usuario no válido');
+            return redirect()->back();
         }
-    }
 
-    public function delete($id)
-    {
+        $usuarioModel = new Usuarios_model();
+        $existingUser = $usuarioModel->find($id);
 
-        $Model = new Usuarios_model();
-        $data = $Model->getUsuario($id);
+        // Verificar si el usuario existe
+        if (!$existingUser) {
+            session()->setFlashdata('fail', 'Usuario no encontrado');
+            return redirect()->back();
+        }
+
+        // Obtener las reglas de validación para edición
+        $validationRules = $this->getValidationRules(true);
+
+        // Validar que el email sea único, excluyendo el usuario actual
+        $validationRules['email'] = "required|valid_email|is_unique[usuarios.email,id,{$id}]";
+
+        // Validar los datos recibidos
+        if (!$this->validate($validationRules)) {
+            // Guardar errores en Flashdata y retornar
+            return redirect()->back()
+                ->withInput()
+                ->with('validationErrors', $this->validator->getErrors());
+        }
+
+        // Preparar los datos para la actualización
         $datos = [
-            'id' => 'id',
-            'baja'  => 'SI',
-
+            'nombre'    => esc($this->request->getVar('nombre')),
+            'apellido'  => esc($this->request->getVar('apellido')),
+            'usuario'   => esc($this->request->getVar('usuario')),
+            'telefono'  => esc($this->request->getVar('telefono')),
+            'direccion' => esc($this->request->getVar('direccion')),
+            'email'     => esc($this->request->getVar('email')),
         ];
-        $Model->update($id, $datos);
 
-        session()->setFlashdata('msg', 'Usuario eliminado con éxito');
+        // Actualizar contraseña solo si se envía un nuevo valor
+        $newPass = $this->request->getVar('pass');
+        if (!empty($newPass)) {
+            $datos['pass'] = password_hash($newPass, PASSWORD_DEFAULT);
+        }
 
-        return redirect()->to(base_url('usuarios-list'));
-    }
+        // Actualizar el usuario en la base de datos
+        $usuarioModel->update($id, $datos);
 
-    public function habilitar($id)
-    {
-
-        $Model = new Usuarios_model();
-        $data = $Model->getUsuario($id);
-        $datos = [
-            'id' => 'id',
-            'baja'  => 'NO',
-
-        ];
-        $Model->update($id, $datos);
-
-        session()->setFlashdata('msg', 'Usuario habilitado con éxito');
-
-        return redirect()->to(base_url('eliminados'));
+        // Mensaje de éxito
+        session()->setFlashdata('success', 'Perfil editado con éxito');
+        return redirect()->to(base_url('catalogo'));
     }
 }

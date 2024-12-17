@@ -1,7 +1,5 @@
 <?= $head ?>
 
-<body class="body">
-    <?= $header ?>
     <section class="hero-section" style="background: <?php echo base_url('assets/img/principal.jpg'); ?> no-repeat center;
     background-size: cover;
     width: 100%;

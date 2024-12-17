@@ -6,7 +6,7 @@
 
 
     <?php if ($perfil == 1) { ?>
-        <a class="btn btn-xs ml-2" style="background-color: black; color: white;" href="<?php echo base_url('compras'); ?>">
+        <a class="btn btn-xs ml-2" style="background-color: black; color: white;" href="<?php echo base_url('/compras'); ?>">
             <i class="bi bi-back"></i> Volver
         </a>
     <?php } else { ?>
@@ -20,7 +20,10 @@
     <div class="card  mt-4">
         <div class="card-header">
             <div class="d-flex justify-content-between align-items-center">
-                <h3 class="text-left mb-0">Factura De Compra</h3>
+                <h3 class="text-left mb-0">
+                    Factura De Compra:
+                    <strong> <?php echo esc($venta_id); ?></strong>
+                </h3>
             </div>
         </div>
 

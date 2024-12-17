@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/proyecto_Emilio_Barrios/';
+    public $baseURL = 'http://localhost/proyecto_Emilio_Barrios_FINAL/';
 
     /**
      * --------------------------------------------------------------------------
@@ -69,7 +69,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $defaultLocale = 'en';
+    public $defaultLocale = 'es';
 
     /**
      * --------------------------------------------------------------------------

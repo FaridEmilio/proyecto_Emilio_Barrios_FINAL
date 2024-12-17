@@ -1,9 +1,16 @@
 <div class="container py-4" style="margin-top: 56px;">
-   <?php if (session("msg")) : ?>
-      <div class="container alert alert-success text-start">
-         <?php echo session("msg"); ?>
+   <?php if (session()->getFlashdata('success')) : ?>
+      <div class="alert alert-success">
+         <?= session()->getFlashdata('success') ?>
       </div>
-   <?php endif ?>
+   <?php endif; ?>
+
+   <?php if (session()->getFlashdata('fail')) : ?>
+      <div class="alert alert-danger">
+         <?= session()->getFlashdata('fail') ?>
+      </div>
+   <?php endif; ?>
+
    <div class="card">
       <div class="card-header">
          <div class="d-flex justify-content-between align-items-center">

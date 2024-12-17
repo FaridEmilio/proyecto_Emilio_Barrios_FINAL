@@ -1,4 +1,16 @@
 <div class="container py-4" style="margin-top: 56px;">
+  <?php if (session()->getFlashdata('success')) : ?>
+    <div class="alert alert-success">
+      <?= session()->getFlashdata('success') ?>
+    </div>
+  <?php endif; ?>
+
+  <?php if (session()->getFlashdata('fail')) : ?>
+    <div class="alert alert-danger">
+      <?= session()->getFlashdata('fail') ?>
+    </div>
+  <?php endif; ?>
+
   <div class="card">
     <div class="card-header">
       <h3 class="text-center mb-0">Compras</h3>
